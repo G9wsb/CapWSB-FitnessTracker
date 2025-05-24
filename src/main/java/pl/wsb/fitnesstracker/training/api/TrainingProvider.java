@@ -4,6 +4,9 @@ import pl.wsb.fitnesstracker.user.api.User;
 
 import java.util.Optional;
 
+/**
+ * The interface Training provider.
+ */
 public interface TrainingProvider {
 
     /**

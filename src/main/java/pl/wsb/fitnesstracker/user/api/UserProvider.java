@@ -3,6 +3,9 @@ package pl.wsb.fitnesstracker.user.api;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * The interface User provider.
+ */
 public interface UserProvider {
 
     /**
@@ -30,4 +33,10 @@ public interface UserProvider {
      */
     List<User> findAllUsers();
 
+    /**
+     * Delete user by id.
+     *
+     * @param userid the userid
+     */
+    void deleteUserById(Long userid);
 }

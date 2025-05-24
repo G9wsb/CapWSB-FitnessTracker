@@ -12,6 +12,11 @@ public class UserNotFoundException extends NotFoundException {
         super(message);
     }
 
+    /**
+     * Instantiates a new User not found exception.
+     *
+     * @param id the id
+     */
     public UserNotFoundException(Long id) {
         this("User with ID=%s was not found".formatted(id));
     }
